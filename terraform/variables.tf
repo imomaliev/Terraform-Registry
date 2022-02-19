@@ -18,5 +18,5 @@ variable "github_token" {
 variable "github_topics" {
   description = "GitHub project topics"
   type        = list(string)
-  default     = []
+  default     = ["terraform", "pre-commit", "editorconfig"]
 }

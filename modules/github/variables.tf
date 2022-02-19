@@ -34,5 +34,5 @@ variable "license" {
 variable "topics" {
   description = "Topics"
   type        = list(string)
-  default     = ["terraform", "pre-commit", "editorconfig"]
+  default     = []
 }
