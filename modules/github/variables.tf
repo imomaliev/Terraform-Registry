@@ -14,12 +14,6 @@ variable "project_url" {
   default     = null
 }
 
-variable "visibility" {
-  description = "Visiblity"
-  type        = string
-  default     = "public"
-}
-
 variable "token" {
   description = "Token"
   type        = string
@@ -35,4 +29,16 @@ variable "topics" {
   description = "Topics"
   type        = list(string)
   default     = []
+}
+
+variable "visibility" {
+  description = "Visiblity"
+  type        = string
+  default     = "public"
+}
+
+variable "is_template" {
+  description = "Is template repository"
+  type        = string
+  default     = false
 }

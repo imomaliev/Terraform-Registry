@@ -11,7 +11,7 @@ resource "github_repository" "project" {
   has_issues             = true
   has_projects           = false
   has_wiki               = false
-  is_template            = false
+  is_template            = var.is_template
   allow_merge_commit     = true
   allow_squash_merge     = true
   allow_rebase_merge     = false

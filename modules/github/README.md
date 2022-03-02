@@ -26,6 +26,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_is_template"></a> [is\_template](#input\_is\_template) | Is template repository | `string` | `false` | no |
 | <a name="input_license"></a> [license](#input\_license) | License | `string` | `"MIT"` | no |
 | <a name="input_project_description"></a> [project\_description](#input\_project\_description) | Description | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Project name | `string` | n/a | yes |
