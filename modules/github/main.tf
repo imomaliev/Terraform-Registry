@@ -41,7 +41,10 @@ resource "github_repository" "project" {
 
 
 # https://registry.terraform.io/providers/integrations/github/4.20.0/docs/resources/branch_protection
+# This feature only works for var.visibility == "public"
+# "Error: Upgrade to GitHub Pro or make this repository public to enable this feature."
 resource "github_branch_protection" "main" {
+  count                  = var.visibility == "public" ? 1 : 0
   repository_id          = github_repository.project.node_id
   pattern                = "main"
   enforce_admins         = true
