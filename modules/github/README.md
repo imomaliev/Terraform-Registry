@@ -3,13 +3,13 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_github"></a> [github](#requirement\_github) | 4.20.0 |
+| <a name="requirement_github"></a> [github](#requirement\_github) | 4.26.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_github"></a> [github](#provider\_github) | 4.20.0 |
+| <a name="provider_github"></a> [github](#provider\_github) | 4.26.1 |
 
 ## Modules
 
@@ -19,8 +19,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [github_branch_protection.main](https://registry.terraform.io/providers/integrations/github/4.20.0/docs/resources/branch_protection) | resource |
-| [github_repository.project](https://registry.terraform.io/providers/integrations/github/4.20.0/docs/resources/repository) | resource |
+| [github_branch_protection.main](https://registry.terraform.io/providers/integrations/github/4.26.1/docs/resources/branch_protection) | resource |
+| [github_repository.project](https://registry.terraform.io/providers/integrations/github/4.26.1/docs/resources/repository) | resource |
 
 ## Inputs
 

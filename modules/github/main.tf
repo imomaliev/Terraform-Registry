@@ -2,7 +2,7 @@ provider "github" {
   token = var.token
 }
 
-# https://registry.terraform.io/providers/integrations/github/4.20.0/docs/resources/repository
+# https://registry.terraform.io/providers/integrations/github/4.26.1/docs/resources/repository
 resource "github_repository" "project" {
   name                   = replace(lower(var.project_name), "/ +/", "-")
   description            = var.project_description
@@ -22,7 +22,7 @@ resource "github_repository" "project" {
   vulnerability_alerts   = true
   # TODO: add a way to setup https://docs.github.com/en/rest/reference/repos#enable-automated-security-fixes
 
-  # https://registry.terraform.io/providers/integrations/github/4.20.0/docs/resources/repository#github-pages-configuration
+  # https://registry.terraform.io/providers/integrations/github/4.26.1/docs/resources/repository#github-pages-configuration
   # REFACTORME: https://github.com/integrations/terraform-provider-github/issues/782
   # Currently pages does not work consistently on creation
   # pages {
@@ -40,7 +40,7 @@ resource "github_repository" "project" {
 }
 
 
-# https://registry.terraform.io/providers/integrations/github/4.20.0/docs/resources/branch_protection
+# https://registry.terraform.io/providers/integrations/github/4.26.1/docs/resources/branch_protection
 # This feature only works for var.visibility == "public"
 # "Error: Upgrade to GitHub Pro or make this repository public to enable this feature."
 resource "github_branch_protection" "main" {
