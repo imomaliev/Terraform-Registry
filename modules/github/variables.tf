@@ -42,3 +42,12 @@ variable "is_template" {
   type        = string
   default     = false
 }
+
+variable "template" {
+  description = "Template repository"
+  type = object({
+    owner      = string
+    repository = string
+  })
+  default = null
+}

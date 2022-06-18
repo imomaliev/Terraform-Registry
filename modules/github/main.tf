@@ -32,6 +32,14 @@ resource "github_repository" "project" {
   #   }
   # }
 
+  dynamic "template" {
+    for_each = var.template[*]
+    content {
+      owner      = template.value.owner
+      repository = template.value.repository
+    }
+  }
+
   # https://www.terraform.io/language/meta-arguments/lifecycle
   lifecycle {
     prevent_destroy = true
