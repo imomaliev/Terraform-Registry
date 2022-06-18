@@ -35,7 +35,7 @@ resource "github_repository" "project" {
   # https://www.terraform.io/language/meta-arguments/lifecycle
   lifecycle {
     prevent_destroy = true
-    ignore_changes  = [license_template, auto_init]
+    ignore_changes  = [license_template, auto_init, pages]
   }
 }
 
