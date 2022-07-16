@@ -51,3 +51,9 @@ variable "template" {
   })
   default = null
 }
+
+variable "require_signed_commits" {
+  description = "Require signed commits"
+  type        = bool
+  default     = false
+}

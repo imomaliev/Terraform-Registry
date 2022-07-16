@@ -31,6 +31,7 @@ No modules.
 | <a name="input_project_description"></a> [project\_description](#input\_project\_description) | Description | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Project name | `string` | n/a | yes |
 | <a name="input_project_url"></a> [project\_url](#input\_project\_url) | Homepage url | `string` | `null` | no |
+| <a name="input_require_signed_commits"></a> [require\_signed\_commits](#input\_require\_signed\_commits) | Require signed commits | `bool` | `false` | no |
 | <a name="input_template"></a> [template](#input\_template) | Template repository | <pre>object({<br>    owner      = string<br>    repository = string<br>  })</pre> | `null` | no |
 | <a name="input_token"></a> [token](#input\_token) | Token | `string` | n/a | yes |
 | <a name="input_topics"></a> [topics](#input\_topics) | Topics | `list(string)` | `[]` | no |
