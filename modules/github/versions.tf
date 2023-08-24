@@ -2,10 +2,10 @@ terraform {
   # https://www.terraform.io/language/expressions/type-constraints#experimental-optional-object-type-attributes
   # experiments = [module_variable_optional_attrs]
   required_providers {
-    # https://registry.terraform.io/providers/integrations/github/4.26.1
+    # https://registry.terraform.io/providers/integrations/github/5.33.0
     github = {
       source  = "integrations/github"
-      version = "4.26.1"
+      version = "5.33.0"
     }
   }
 }
